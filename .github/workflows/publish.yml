@@ -1,0 +1,19 @@
+name: publish
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2.4.2
+            - uses: actions/setup-node@v3.1.1
+              with:
+                  node-version: 16
+                  registry-url: https://registry.npmjs.org
+            - run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.CRA_AUTH_TOKEN}}
