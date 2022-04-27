@@ -1,0 +1,22 @@
+{
+	"name": "cra-template-archetype-jutsu",
+	"version": "1.2.1",
+	"keywords": [
+		"react",
+		"create-react-app",
+		"template",
+		"redux",
+		"reduxjs",
+		"react-redux"
+	],
+	"description": "The CRA template build with redux, formik, react-router and more.",
+	"main": "template.json",
+	"license": "MIT",
+	"engines": {
+		"node": ">=8"
+	},
+	"files": [
+		"template",
+		"template.json"
+	]
+}
